@@ -1,0 +1,8 @@
+namespace: postgresql
+replicas: 2
+storage:
+  class_name: longhorn-hdd
+  size: 1Gi
+secret:
+  postgres_password: Y2hhbmdlX21l
+
