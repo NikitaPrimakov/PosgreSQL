@@ -48,15 +48,3 @@ spec:
         requests:
           storage: {{ .Values.storage.size }}
 
-
-
----
-            - name: POSTGRES_USER
-              value: postgres
-            - name: POSTGRES_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: psql-password
-                  key: postgres_password
-            - name: POSTGRES_DB
-              value: postgres
